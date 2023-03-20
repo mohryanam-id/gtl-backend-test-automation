@@ -1,8 +1,8 @@
 # Backend Test Automation Assignment
 
-## Summary
+## Summary ([demo](https://drive.google.com/file/d/1d6QjakGfLzJfPKPSk6XNKQ5cEX6zhAYh/view?usp=share_link)-> need to request access)
 
-- dummyapi to help simulating the endpoint, It is using OpenAPI specs and Flask, and it's using almost 1 million records.
+- dummyapi to help simulating the endpoint (latest master), It is using OpenAPI specs and Flask, and it's using almost 1 million records.
 - Pytest Framework for the testing, and Allure Framework for the reporting.
 - Using 3 test cases, intentionally 2 are failed, and 1 is passed, retrieve data by page/size to allow us only checking on chunked files.
 
