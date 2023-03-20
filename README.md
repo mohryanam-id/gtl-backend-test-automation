@@ -3,7 +3,7 @@
 ## Summary
 
 - dummyapi to help simulating the endpoint, It is using OpenAPI specs and Flask.
-- Requests module and Pytest Framework for the testing, and Allure Framework for the reporting.
+- Pytest Framework for the testing, and Allure Framework for the reporting.
 - The flow to compare the file is like below:
 
 ```text
