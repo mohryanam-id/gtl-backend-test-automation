@@ -1,0 +1,41 @@
+openapi: "3.0.0"
+info:
+  version: "1.0.0"
+  title: Securities List API
+  description: API for retrieving a list of securities
+servers:
+  - url: https://example.com/api
+    description: Production server
+paths:
+  /getSecuritiesList:
+    get:
+      summary: Retrieve list of securities
+      description: Returns a CSV file with a list of securities, where each record is identified by a combination of `NAME OF COMPANY`, `SYMBOL`, and `Exchange Market`.
+      responses:
+        "200":
+          description: OK
+          content:
+            text/csv:
+              schema:
+                type: string
+                format: binary
+                description: CSV file containing securities list
+components:
+  schemas:
+    Securities:
+      type: object
+      properties:
+        NAME OF COMPANY:
+          type: string
+        SYMBOL:
+          type: string
+        Exchange Market:
+          type: string
+        DATE OF LISTING:
+          type: string
+        Outstanding Shares:
+          type: string
+      required:
+        - NAME OF COMPANY
+        - SYMBOL
+        - Exchange Market
