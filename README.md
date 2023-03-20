@@ -88,14 +88,18 @@ Some possible improvements to this code include:
 ## Criteria
 
 - [x] Solution should be scalable(Should support fast changing product features and requirements and large no of future/current test cases).
-- [ ] Choose efficient design patterns. Elaborate the choice in a README file.
-      Despite the code is not using any designs pattern implicitly, the code can be refactored to use design patterns such as: template method to test\*.py files, singleton to read config file, etc.
+- [x] Choose efficient design patterns. Elaborate the choice in a README file.
+
+```text
+singleton is the design pattern that is used for reading the config file
+```
+
 - [x] Use OOP concepts where you see required.
 - [x] Choose the techstack with consideration for Maintainability/Usability/Reporting/Readability.
 
-- Solution should adhere to SOLID principles.
-- README file should include the steps to run the tests, the brief description of the approach or any alternative considered and any other dependency.
-- What improvements would be needed for the solution to be platform/OS independent.
+- [x] Solution should adhere to SOLID principles.
+- [x] README file should include the steps to run the tests, the brief description of the approach or any alternative considered and any other dependency.
+- [x] What improvements would be needed for the solution to be platform/OS independent.
 
 ## Notes
 
