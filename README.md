@@ -2,13 +2,10 @@
 
 ## Summary
 
-- dummyapi to help simulating the endpoint, It is using OpenAPI specs and Flask.
+- dummyapi to help simulating the endpoint, It is using OpenAPI specs and Flask, and it's using almost 1 million records.
 - Pytest Framework for the testing, and Allure Framework for the reporting.
-- The flow to compare the file is like below:
+- Using 3 test cases, intentionally 2 are failed, and 1 is passed, retrieve data by page/size to allow us only checking on chunked files.
 
-```text
-check unique keys --> check other values --> create the result to the report
-```
 
 ## Description
 
@@ -21,10 +18,7 @@ This is Automated API Testing for comparing two CSV files returned by the /getSe
 - Run Terminal/Powershell
 - Change directory to the repository
 - Install Allure Framework (<https://docs.qameta.io/allure/>)
-- Open another terminal
-- Change directory to the repository again
 - [Optional] Create virtual environment and Activate it (<https://realpython.com/python-virtual-environments-a-primer/>)
-
 - Install the required packages by running
 
 ```bash
@@ -68,6 +62,8 @@ pytest
 allure serve ./report/allure
 ```
 
+## 
+
 ## Output
 
 The code will output an allure report showing the differences between the two CSV files on the test cases, if any. If there are no differences, the report will indicate that the two files are identical.
@@ -82,7 +78,7 @@ Some possible improvements to this code include:
 - Adding more tests to cover edge cases and potential errors.
 - Refactoring the code.
 - Use dockerization
-- Use AI to check false-positive or false-negative
+- Use AI to check false-positive and false-negative
 - CI/CD integration
 
 ## Criteria
